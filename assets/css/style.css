@@ -1,0 +1,14 @@
+body
+{
+   background: #3B653D;
+   padding: 10px;
+   overflow: scroll;
+	 height: 700px;
+  box-shadow:
+  inset #a19374 0 0 0 35px,
+  inset #bdb39d 0 0 0 20px,  
+		inset #a7956e 0 0 0 10px;
+	 
+}
+
+ 
