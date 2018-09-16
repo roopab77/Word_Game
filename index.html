@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>Word Game</title>
 </head>
 
@@ -19,52 +20,53 @@
         <strong>H A N G M A N</strong><br>  Guess the colleges
       </h2>
     </div>
-
     <div class="row">
-      <div class="col-md-3 mr-3">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="../Word_Game/assets/images/banner.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">To play game</h5>
-            <p class="card-text">Press the button below to get started!!</p>
-            <a href="#" class="btn btn-primary">Start</a>
-            <h5>Score : <span id="score">0</span></h5>
-          </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Start here</h5>
+                  <p class="card-text"> To start the game press the button!</p>
+                  <a href="#" class="btn btn-primary" id="Btn_start">Start</a>
+                </div>
+                <div class="d-inline p-2 bg-dark text-white">Score : <span id="score">0</span></div>
+                <div><img src="../Word_Game/assets/images/hangman.webp" alt="..." style="height: 225px;width: 350px">
+                </div>
+              </div>
+        </div>
+        <div class="col">
+           
+          <div class="card">
+              <div class="d-inline p-2 bg-dark text-white">Have fun playing....                                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Guess the word now </h5>
+                 
+                
+              </div>
+               <div id="word_toguess" style="text-align: center;   font-size: 35px;font-weight: bolder;"></div> 
+               <div  ><img id="you_win" src="../Word_Game/assets/images/youwin.gif" style="height: 200px;width: 350px; visibility: hidden" ></div>
+               <div id="messages"></div>
+              <div class="d-inline p-2 bg-dark text-white">Guesses left :<span id="guesses_left">20</span>                             </div>
+            </div>
+        </div>
+        <div class="col">
+          
+          <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Words guessed so far</h5><span id="words_guessed"></span>
+                <p class="card-text" style="height:90px"></p>
+                
+              </div>
+              
+                  <div class="d-inline p-2 bg-dark text-white"> A small hint for you to guess</div>
+                  <div>
+              <img src="" id="coll_image" alt="..." class="img-thumbnail" style="height:200px;width:350px"></div>
+            </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div class="card bg-light mb-3"  >
-          <div class="card-header">Start Guessing</div>
-          <div class="card-body">
-            <h5 class="card-title">Current Word </h5>
-            <div id="dashes" style="height: 210px"></div>
-              <h5>Guesses remaining - </h5><span id="guesses-remaining">10</span>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img class="card-img-top" src="../Word_Game/assets/images/oxford.jpg" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">This is a small hint for you to guess.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5>Letters guessed - <span id="letters-guessed">d,e,f,g,h,j,k,f  </span></h5>
-            
-            <br>
-          </div>
-        </div>
-
-
-      </div>
-
     </div>
-
-
-
+   
+</div>
+    <script src="../Word_Game/assets/javascript/game.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
